@@ -1,0 +1,123 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+.proile.profile-image {
+    background-image: url("th.jpg") background-position:center center;
+}
+
+.first-look {
+    background-color: blueviolet;
+    text-align: center;
+    padding: 47px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.first-look .profile-image {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.professional-details {
+    float: left;
+    width: 55%;
+}
+
+.details-section {padding: 20px;}
+
+.profile {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-left: 0px;
+    margin-bottom: 27px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.ac-section {
+    background-color: purple;
+    padding: 28px;
+    padding-right: 0;
+}
+
+.profile-image {
+    background-color: blueViolet;
+    width: 30px;
+}
+
+.about-contact {}
+
+.about-contact.contact-details {
+    margin: 20px 0;
+}
+
+.details-section {}
+
+.company-college{
+    display: inline-block;
+    width: 319px;
+}
+
+.year {
+    display: inline-block;
+}
+
+.trainee-designer {
+    color: rebeccapurple;
+}
+
+p {
+    margin-top: 22px;
+    
+}
+.para-color{
+    color:black;
+}
+
+.creative-designer {
+    color: rebeccapurple;
+}
+
+.senior-designer {
+    color: rebeccapurple;
+}
+.master-science{
+    color:rebeccapurple; 
+}
+.batchelor-scienc{
+    color:rebeccapurple; 
+}
+.skill-html{
+    background-color: blueViolet;
+        border-radius: 13px;
+        width:60%;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+ }
+
+ .details-section a i{
+    border: 1px solid #75385c;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: #75385c;
+    float:left;
+}
