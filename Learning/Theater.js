@@ -7,18 +7,26 @@ $(document).ready(function () {
                 renderTheater(theaterData);
             });
     }
-});
-$("button.back").on('click', function (e) {
-    e.preventDefault();
-    window.history.back();
+
+    $("button.back").on('click', function (e) {
+        e.preventDefault();
+        window.history.back();
+    });
+    
+    function renderTheater(htmlTheaterData) {
+        var htmlTheaterString = "";
+        for (i = 0; i < htmlTheaterData.length; i++) {
+            htmlTheaterString += "<p class='theaterHeadings'>" + htmlTheaterData[i].Name + " " + htmlTheaterData[i].MilesFromCurrentLoc + " Miles</p>";
+            htmlTheaterString += "<p class='address'>" + htmlTheaterData[i].Address + "<hr>";
+        }
+        console.log(htmlTheaterString);
+        $(".theaterList").html(htmlTheaterString);
+    }
+
+    displayTheaterList();
+
+
 });
 
-function renderTheater(htmlTheaterData) {
-    var htmlTheaterString = "";
-    for (i = 0; i < htmlTheaterData.length; i++) {
-        htmlTheaterString += "<h2 class='theaterHeadings'>" + htmlTheaterData[i].Name + "</h2>";
-        htmlTheaterString += "<p class='address'>" + htmlTheaterData[i].Address + " " + htmlTheaterData[i].MilesFromCurrentLoc + " " + htmlTheaterData[i].Address + "</p>" + "<hr>";
-    }
-    console.log(htmlTheaterString);
-    $(".theaterList").html(htmlTheaterString);
-}
+
+

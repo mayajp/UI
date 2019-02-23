@@ -7,6 +7,7 @@ var listType = 0;
 var activeList = "";
 var backurl = "movie.html";
 var theaterList = $("theaterList");
+
 $(document).ready(function () {
     function displayMovieList(listType) {
         $.getJSON(url + listType, function (htmlData) {
@@ -68,9 +69,7 @@ function renderHTML(htmlData) {
 
         htmlString += "<img class='image' src=" + htmlData[i].Image + " />";
         htmlString += "<h2 class='heading'>" + htmlData[i].Name + "</h2>";
-        htmlString += "<p class='discription'>" + htmlData[i].Genre + " " + htmlData[i].Length + "mins " + htmlData[i].Rating + "</p>" + "<hr>";
-
-        htmlString += "<a href='theater.html'>next</a>";
+        htmlString += "<p class='discription'>" + htmlData[i].Genre + " " + htmlData[i].Length + "mins " + htmlData[i].Rating + "</p>" + "<a href='theater.html'>next</a><hr>";
     }
     console.log(htmlString);
     $("#movieList").html(htmlString);
